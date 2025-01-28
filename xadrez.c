@@ -28,5 +28,15 @@ int main() {
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
+int bispo, torre, rainha;
+
+
+printf("\n\nDESAFIO XADREX - NÍVEL NOVATO\n\n");
+
+printf("\nExemplos de movimentação BISPO, TORRE e RAINHA, com base nas REGRAS REAIS DO JOGO\n");
+
+
+
+
     return 0;
 }
