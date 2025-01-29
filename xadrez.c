@@ -28,15 +28,47 @@ int main() {
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
-int bispo, torre, rainha;
-
+int bispo, torre, rainha;                                                             // nome das variáveis
+char nome [20], cima [5], baixo [5], esquerda [8], direita [7], diagonal [8];        // nome das variáveis
+                  
 
 printf("\n\nDESAFIO XADREX - NÍVEL NOVATO\n\n");
+   printf("\nExemplos de movimentação BISPO, TORRE e RAINHA, com base nas REGRAS REAIS DO JOGO\n");
+        printf("\nQual seu nome: \n");
+        scanf("%s", &nome);
+printf("\nSeja bem vindo %s\n", nome);
+printf("\nVamos começar o jogo\n");
 
-printf("\nExemplos de movimentação BISPO, TORRE e RAINHA, com base nas REGRAS REAIS DO JOGO\n");
+do
+{
+  printf("Digite a direção e a quantidade de casas para BISPO....\n", nome);
+  scanf("%s %d", &diagonal, &bispo);
+
+  if(bispo <=5){                        // se os número entre 0 e 5 divididor por 1 for igual a
+    printf("Você digitou correto, movendo bispo para a Diagonal\n");
+  } else {
+    printf("Você digitou a direção erradaz\n");
+  }
 
 
+} while (bispo != 5);                                          // a condição vai testar todos os números da variável "bispo" se eles são menor ou igual a 5
 
+printf("\nDigite a direção e a quantidade de casas para TORRE...\n");
+             
 
-    return 0;
+return 0;
+
+   
 }
+
+
+
+
+
+
+
+
+
+
+
+
